@@ -7,7 +7,9 @@ pipeline {
             }
         }
 	stage('Unit test'){
+	    steps{
 		sh "python3 -m unittest -v test_calculadora.py"
+	    }
 	}
     }
 }
